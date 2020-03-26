@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Swiper Card Slider</title>
+        <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    </head>
+    <style>
+        * 
+        {
+            margin: 0;
+            padding: 0;
+            font-family: Helvetica, Arial, sans-serif;
+        }
+        body {
+            background: #f5f5f5;
+            min-height: 100vh;
+        }
+        .swiper-container {
+      width: 300px;
+      height: 380px;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      margin-left: -150px;
+      margin-top: -150px;
+    }
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      background: #f2f2f2
+    }
+    .swiper-container .swiper-slide .imgBx {
+        position: absolute;
+        width: 300px;
+        height: 300px;
+    }
+    .swiper-container .swiper-slide .imgBx img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .swiper-container .swiper-slide .content{
+        position: absolute;
+        bottom: 0;
+        height: 80px;
+        width: 100%;
+        background: #fff;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .swiper-container .swiper-slide .content h2{
+        font-size: 20px;
+    }
+    .swiper-container .swiper-slide .content h2 span{
+        font-size: 20px;
+        color: #f44336;
+    }
+    .pics {
+        width: 300px;
+        height: 300px;
+    }
+    </style>
+    <body>
+          <!-- Swiper -->
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+              <div class="imgBx">
+                  <img src="black-logo.png" class="pics"/>
+              </div>
+              <div class="content">
+                    <h2>Pascual Vila<br><span>Web Developer</span></h2>
+              </div>
+          </div>
+          <div class="swiper-slide">
+                <div class="imgBx">
+                    <img src="picabout1.jpg" class="pics"/>
+                </div>
+                <div class="content">
+                    <h2>Pascual Vila<br><span>Photographer</span></h2>
+                </div>
+            </div> 
+          <div class="swiper-slide">
+              <div class="imgBx">
+                  <img src="picabout2.jpg" class="pics"/>
+              </div>
+              <div class="content">
+                  <h2>Pascual Vila<br><span>Web Designer</span></h2>
+              </div>
+          </div> 
+          <div class="swiper-slide">
+                <div class="imgBx">
+                    <img src="picabout3.jpg" class="pics"/>
+                </div>
+                <div class="content">
+                    <h2>Pascual Vila<br><span>Graphic Designer</span></h2>
+                </div>
+            </div>   
+        </div>
+       
+      </div>
+        
+        <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+        <script rel="text/javascript"></script>
+         <!-- Initialize Swiper -->
+  <script>
+        var swiper = new Swiper('.swiper-container', {
+          effect: 'cube',
+          grabCursor: true,
+          cubeEffect: {
+            shadow: true,
+            slideShadows: true,
+            shadowOffset: 20,
+            shadowScale: 0.94,
+          },
+        });
+      </script>
+    </body>
+</html>
