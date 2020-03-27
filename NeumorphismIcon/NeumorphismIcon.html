@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Neuromorphism Icon Hover effects</title>
+    <!-- bootstrapcdn => https://www.bootstrapcdn.com/fontawesome/ -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  </head>
+  <style>
+      * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+      }
+      body {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          min-height: 100vh;
+          background: #18191f;
+      }
+      ul {
+          position: relative;
+          display: flex;
+          margin: 10px 0; 
+      }
+      ul li {
+          position: relative;
+          list-style: none;
+      }
+      ul li a {
+          display: block;
+          width: 50px;
+          height: 50px;
+          background: #18191f;
+          line-height: 55px;
+          text-align: center;
+          margin: 0 10px;
+          border-radius: 15px;
+          box-shadow: -2px -2px 3px rgba(255,255,255,0.05),
+                        3px 3px 3px rgba(0,0,0,0.2)
+      }
+      ul li a .fa {
+          font-size: 22px;
+          color: #555;
+      }
+      ul li a:hover .fa {
+          color: #00f3ff;
+          text-shadow: 0 0 15px #00f3ff;
+      }
+      ul:nth-child(2) ul li a:hover .fa {
+          color: #f00;
+          text-shadow: 0 0 15px #f00;
+      }
+      ul:nth-child(3) ul li a:hover .fa {
+          color: #0f0;
+          text-shadow: 0 0 15px #0f0;
+      }
+  </style>
+  <body>
+    <ul>
+        <li><a href="#"><i class="fa fa-gift" aria-hidden="true"></i></a></li>
+        <li><a href="#"><i class="fa fa-glass" aria-hidden="true"></i></a></li>
+        <li><a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a></li>
+        <li><a href="#"><i class="fa fa-globe" aria-hidden="true"></i></a></li>
+        <li><a href="#"><i class="fa fa-graduation-cap" aria-hidden="true"></i></a></li>
+    </ul>
+    <ul>
+        <li><a href="#"><i class="fa fa-gift" aria-hidden="true"></i></a></li>
+        <li><a href="#"><i class="fa fa-glass" aria-hidden="true"></i></a></li>
+        <li><a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a></li>
+        <li><a href="#"><i class="fa fa-globe" aria-hidden="true"></i></a></li>
+        <li><a href="#"><i class="fa fa-graduation-cap" aria-hidden="true"></i></a></li>
+    </ul>
+  </body>
+</html>
+
