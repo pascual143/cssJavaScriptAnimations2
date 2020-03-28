@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <style>
+      * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+      }
+      body {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          min-height: 100vh;
+      }
+      .container {
+          position: relative;
+          display: flex;
+          flex-wrap: wrap;
+          width: 1100px;
+      }
+      .container .icon {
+          position: relative;
+          width: 50%;
+          text-align: center;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-wrap: wrap;
+      }
+      .container .icon .iconBx {
+          position: relative;
+          width: calc(50% - 40px);
+          margin: 0 30px 30px 0;
+          padding: 0 25px;
+          height: 240px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-wrap: wrap;
+          border-radius: 4px;
+          transition: 0.5;
+          box-shadow: 0 5px 15px rgba(0,0,0,.07);
+      }
+      .container .icon .iconBx.active {
+        box-shadow: 0 10px 30px rgba(0,0,0,1);
+      }
+      .container .icon .iconBx img {
+          max-width: 100%;
+          filter: grayscale(1);
+          transition: 0.5s;
+          transform: scale(0.8);
+      }
+      .container .icon .iconBx.active img {
+        filter: grayscale(0);
+        transform: scale(1);
+      }
+      .content {
+          position: relative;
+          width: 50%;
+          overflow: hidden;
+      }
+      .content .contentBx {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          transition: 0.5s;
+          transform: scale(0);
+          opacity: 0;
+      }
+      .content .contentBx.active{
+          transform: scale(1);
+          opacity: 1;
+      }
+      .content .contentBx h2 {
+          font-size: 3em;
+      }    
+  </style>
+  <body>
+    <div class="container">
+        <div class="icon">
+            <div class="iconBx active" data-id="content1">
+                <img src="google.jpg"/>
+            </div>
+            <div class="iconBx"  data-id="content2">
+                <img src="amazon.jpg"/>
+            </div>
+            <div class="iconBx" data-id="content3">
+                <img src="apple.png"/>
+            </div>
+            <div class="iconBx" data-id="content4">
+                <img src="face.png"/>
+            </div>
+        </div>
+        <div class="content">
+            <div class="contentBx active" id="content1">
+                <div>
+                    <div class="text">
+                        <h2>Google Text</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contentBx" id="content2">
+                <div>
+                    <div class="text">
+                        <h2>Amazon Text</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contentBx" id="content3">
+                <div>
+                    <div class="text">
+                        <h2>Apple Text</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contentBx" id="content4">
+                <div>
+                    <div class="text">
+                        <h2>Facebook Text</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        var iconBx = document.querySelectorAll('.iconBx');
+        var contentBx = document.querySelectorAll('.contentBx') ;
+ 
+        for (var i=0; i<iconBx.length; i++){
+            iconBx[i].addEventListener('mouseover', function(){
+                for (var i=0; i<contentBx.length; i++) {
+                    contentBx[i].className='contentBx';
+                }
+                document.getElementById(this.dataset.id).className = 'contentBx active';
+
+                for (var i=0; i<iconBx.length; i++){
+                    iconBx[i].className='iconBx';
+                }
+                this.className= 'iconBx active';
+            })
+        }
+    </script>
+  </body>
+</html>
