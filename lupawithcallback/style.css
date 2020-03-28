@@ -1,0 +1,30 @@
+body {
+  background: #00bcd4;
+}
+
+svg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+#log {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 440px;
+  bottom: 0;
+  margin: auto;
+  color: #FFF;
+  width: 200px;
+  height: 40px;
+  overflow: auto;
+}
+
+#log p {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+}
