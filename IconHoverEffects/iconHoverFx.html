@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title>Icon Hover Effects</title>
+  </head>
+  <style>
+      * {
+          margin: 0;
+          padding: 0;
+      }
+      .banner {
+          position:  absolute;
+          width: 100%;
+          height: 100vh;
+          overflow: hidden;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+      @media (max-width:768px){
+          .banner {
+              flex-direction: column;
+          }
+          .banner i.fa {
+              height: 50%;
+              line-height: 50vh;
+              font-size: 50vw; 
+          }
+      }
+      .banner video {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          line-height: 100vh;
+      }
+      .banner i.fa {
+          position: relative;
+          width: 100%;
+          height: 100%;
+          background: #fff;
+          font-size: 35vw;
+          text-align: center;
+          color: #000;
+          line-height: 100vh;
+          mix-blend-mode: screen;
+      }
+      .banner i.fa:hover {
+          color: #fff;
+          background: #000;
+      }
+  </style>
+  <body>
+    <div class="banner">
+        <video autoplay muted loop>
+            <source src="IMG_1614.mp4" type="video/mp4">
+        </video>
+        <i class="fa fa-facebook" aria-hidden="true"></i>
+        <i class="fa fa-twitter" aria-hidden="true"></i>
+
+    </div>
+  </body>
+</html>
+
